@@ -1,0 +1,52 @@
+.account {
+  background: linear-gradient(rgba(0, 0, 0, 0.833), rgba(52, 52, 52, 0.5)),
+    url("../assets/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+  min-height: 768px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.account > * {
+  height: 100%;
+  width: 50%;
+}
+
+.account > .account_text {
+  color: white;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.account_text h1 {
+  font-size: clamp(3rem, 4vw, 4rem);
+}
+
+.account_text p {
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  max-width: 380px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .account {
+    flex-direction: column;
+    padding: 1rem 0.25rem;
+    margin-bottom: 2rem;
+  }
+  .account > * {
+    width: 100%;
+  }
+  .account div:nth-child(2) {
+    width: 100%;
+  }
+}

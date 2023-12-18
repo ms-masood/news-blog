@@ -1,0 +1,21 @@
+.redirect {
+  text-align: center;
+}
+
+.redirect h1 {
+  margin-bottom: 2rem;
+}
+
+.redirect p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.redirect span {
+  margin-right: 1rem;
+}
+
+.redirect a {
+  color: red;
+  text-decoration: underline;
+}

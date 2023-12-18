@@ -1,51 +1,58 @@
-/* NAVBAR STYLING STARTS */
+.navheader {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  background-color: teal;
+  padding: 0.5rem 2rem;
   color: #fff;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .nav_links a {
   color: #fff;
+  text-underline-offset: 0.25rem;
 }
 
-/* LOGO */
 .logo {
-  font-size: 32px;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
-/* NAVBAR MENU */
+.logo a {
+  color: rgb(215, 32, 32);
+}
 .menu {
   display: flex;
   gap: 1em;
   font-size: 18px;
 }
 
-.menu li:hover {
-  background-color: #4c9e9e;
-  border-radius: 5px;
+.menu li:hover > a {
   transition: 0.3s ease;
+  text-decoration: underline;
+  color: red;
 }
 
 .menu li {
   padding: 5px 14px;
 }
 
-/* DROPDOWN MENU */
 .services {
   position: relative;
 }
 
 .dropdown {
-  background-color: rgb(1, 139, 139);
+  background-color: #141414;
   padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
+  position: absolute;
   display: none;
   border-radius: 8px;
   top: 35px;
+  z-index: 5;
 }
 
 .dropdown li + li {
@@ -59,43 +66,37 @@
 }
 
 .dropdown li:hover {
-  background-color: #4c9e9e;
+  background-color: #464646;
 }
 
 .services:hover .dropdown {
   display: block;
 }
 
-/* RESPONSIVE NAVBAR MENU STARTS */
-
-/* CHECKBOX HACK */
-
-input[type="checkbox"] {
+.navbar input[type="checkbox"] {
   display: none;
 }
 
-/* HAMBURGER MENU */
 .hamburger {
   display: none;
   font-size: 24px;
   user-select: none;
 }
 
-/* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
   .menu {
     display: none;
     position: absolute;
-    background-color: teal;
+    background-color: #141414;
     right: 0;
     left: 0;
     text-align: center;
-    padding: 16px 0;
+    padding: 2rem 0;
+    margin-top: 0.5rem;
   }
 
   .menu li:hover {
     display: inline-block;
-    background-color: #4c9e9e;
     transition: 0.3s ease;
   }
 
@@ -105,6 +106,7 @@ input[type="checkbox"] {
 
   input[type="checkbox"]:checked ~ .menu {
     display: block;
+    z-index: 5;
   }
 
   .hamburger {
@@ -112,12 +114,9 @@ input[type="checkbox"] {
   }
 
   .dropdown {
+    border: 1px solid #9a9a9a;
     left: 50%;
-    top: 30px;
+    top: -30px;
     transform: translateX(35%);
-  }
-
-  .dropdown li:hover {
-    background-color: #4c9e9e;
   }
 }

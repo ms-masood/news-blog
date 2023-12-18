@@ -1,14 +1,19 @@
-/* UTILITIES */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
 body {
-  font-family: cursive;
-  max-width: 1200px;
-  margin: 0 auto;
+  min-height: 100vh;
+}
+
+main {
+  margin: 4rem auto;
+  width: 99%;
+  max-width: 1400px;
+  min-height: 100%;
 }
 
 a {
@@ -17,4 +22,12 @@ a {
 
 li {
   list-style: none;
+}
+
+a,
+li,
+i {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

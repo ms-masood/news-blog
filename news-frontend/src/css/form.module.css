@@ -1,0 +1,113 @@
+.container {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 340px;
+  background-color: rgba(0, 0, 0, 0.805);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+}
+.container .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.container .content h2 {
+  align-self: flex-start;
+  font-size: 2rem;
+  color: white;
+}
+.container .content .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.container .content .form .inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.container .content .form label {
+  color: white;
+}
+.container .content .form .inputBox input {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  padding: 1.75rem 0.7rem 0.5rem;
+  border-radius: 4px;
+  color: black;
+}
+.container .content .form .inputBox i {
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #828282;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.container .content .form .inputBox input:focus ~ i,
+.container .content .form .inputBox input:valid ~ i {
+  transform: translateY(-7.5px);
+  font-size: 0.8rem;
+  color: rgb(215, 32, 32);
+}
+.container .content .form .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .content .form .links a {
+  color: rgb(215, 32, 32);
+  text-decoration: none;
+}
+
+.container .content .form .links a:hover {
+  text-decoration: underline;
+}
+
+.container .content .form .inputBox input[type="submit"] {
+  padding: 10px;
+  background-color: rgb(215, 32, 32);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  opacity: 0.6;
+}
+
+.form .fullname {
+  display: flex;
+  justify-content: space-between;
+}
+.form .fullname .inputBox:first-child {
+  margin-right: 0.25rem;
+}
+
+.error {
+  color: red;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+#password {
+  bottom: -1.8rem;
+}
