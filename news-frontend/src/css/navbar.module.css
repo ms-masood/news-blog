@@ -23,7 +23,8 @@
 }
 
 .logo a {
-  color: rgb(215, 32, 32);
+  /* color: rgb(215, 32, 32); */
+  color: white;
 }
 .menu {
   display: flex;

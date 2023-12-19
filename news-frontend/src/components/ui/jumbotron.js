@@ -7,7 +7,15 @@ const Jumbotron = ({ data }) => {
   return (
     <div className={style.container}>
       <div className={style.image_container}>
-        <img src={data?.link || sample} alt="jumbotron" />
+        <img
+          src={
+            data?.link ||
+            // "https://www.kasandbox.org/programming-images/avatars/spunky-sam.png" ||
+            "https:///www.kasandbox.org/programming-images/avatars/mr-pants.png" ||
+            sample
+          }
+          alt="jumbotron"
+        />
         <div className={style.details}>
           <h1>{data?.heading || "Florida Man"}</h1>
           <p>

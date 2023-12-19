@@ -6,8 +6,8 @@ const Aside = () => {
     <div>
       <input type="checkbox" id="check" className={style.check} />
       <label htmlFor="check" className={style.label}>
-        <i class="fas fa-bars" id={style.btn}></i>
-        <i class="fas fa-times" id={style.cancel}></i>
+        <i class="fas fa-angles-right" id={style.btn}></i>
+        <i class="fas fa-angles-left" id={style.cancel}></i>
       </label>
       <div className={style.sidebar}>
         <header>

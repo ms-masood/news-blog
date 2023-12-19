@@ -67,6 +67,7 @@ const Form = ({
           ) : (
             <h2>Sign in</h2>
           )}
+          {/* <h1>{description.btnName}</h1> */}
           <form className={formstyle.form} onSubmit={handleSubmit}>
             {description.btnName === "Signup" && (
               <>
@@ -199,7 +200,7 @@ const Form = ({
                 </label>
               </>
             )}
-            <h1 style={{ textAlign: "center", color: "white" }}> Or </h1>
+            {/* <h1 style={{ textAlign: "center", color: "white" }}> Or </h1> */}
             <label className={formstyle.links}>
               {description?.text}
               <Link to={description?.link}>

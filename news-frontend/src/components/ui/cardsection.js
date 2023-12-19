@@ -1,18 +1,11 @@
 import NewsCard from "./newscard";
+import style from "../../css/cardsection.module.css";
 
 const CardSection = ({ title, articles }) => {
-  const style = {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center",
-    flexWrap: "wrap",
-    margin: "2rem 0",
-    width: "100%",
-  };
   return (
     <>
       <h1>{title || "News Articles"}</h1>
-      <section style={style}>
+      <section className={style.container}>
         <NewsCard />
         <NewsCard />
         <NewsCard />
